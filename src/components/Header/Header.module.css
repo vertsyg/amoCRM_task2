@@ -1,0 +1,96 @@
+header {
+  display: flex;
+  padding-top: 15px;
+  position: relative;
+  @media screen and (max-width: 1000px) {
+    justify-content: space-between;
+  }
+}
+
+.header_nav {
+  display: flex;
+}
+
+nav {
+  z-index: 1;
+}
+
+.header_nav li {
+  margin-right: 30px;
+  @media screen and (max-width: 450px) {
+    text-transform: uppercase;
+  }
+}
+
+.header_nav li:last-child {
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
+}
+
+.logo {
+  margin-right: 52px;
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
+}
+
+.logo p {
+  font-family: Montserrat;
+  font-size: 10px;
+  margin-top: 10px;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.header__contacts {
+  margin-left: auto;
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.header__contacts a:first-child {
+  margin-right: 17px;
+  vertical-align: top;
+}
+
+.header__contacts a {
+  margin-left: 30px;
+}
+
+.light_purple {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  flex-shrink: 0;
+  border-radius: 259px;
+  opacity: 0.5;
+  background: #833ab4;
+  filter: blur(196px);
+  left: 40%;
+  top: -225%;
+}
+
+.circle_purple {
+  position: absolute;
+  top: -55%;
+  left: 61%;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(
+    82.3% 82.3% at 27.25% 26.5%,
+    rgba(236, 208, 255, 0.64) 0%,
+    rgba(161, 93, 207, 0.24) 59.67%,
+    rgba(118, 49, 164, 0.21) 78.59%,
+    rgba(86, 24, 128, 0.23) 100%
+  );
+  filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+  backdrop-filter: blur(2px);
+
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+}
